@@ -15,7 +15,13 @@ import org.springframework.core.io.Resource;
 
 import com.zhaopeng.action.MessagePrinter;
 import com.zhaopeng.service.MessageService;
-
+/**
+ * 
+ * TODO
+ *
+ * @author zp
+ * @since 2016年8月4日
+ */
 @Configuration
 @ComponentScan({ "com.zhaopeng" })
 public class Application {
