@@ -47,7 +47,7 @@ public class Application {
         
         System.out.println("123");
 
-        
+        System.out.println("123123123sf");
         System.out.println("ClassPathXmlApplicationContext");
         ApplicationContext ctx = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         MessagePrinter mp = (MessagePrinter) ctx.getBean("messagePrinter");
