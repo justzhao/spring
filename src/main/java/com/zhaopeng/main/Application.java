@@ -44,6 +44,8 @@ public class Application {
         // 获取该资源的简单信息
         System.out.println(fileres.getFilename());
         System.out.println(fileres.getDescription());*/
+        
+        System.out.println("123");
 
         
         System.out.println("ClassPathXmlApplicationContext");
