@@ -51,6 +51,7 @@ public class Application {
         
         System.out.println("hello");
 
+        System.out.println("world");
 
         System.out.println("123123123sf");
         System.out.println("ClassPathXmlApplicationContext");
