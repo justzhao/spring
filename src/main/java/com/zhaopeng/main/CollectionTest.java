@@ -15,6 +15,8 @@ public class CollectionTest {
     
     public static void main(String[] args) {
         CollectionTest test=new CollectionTest();
+        
+        
         // case1 不会改变List内容 字符串不会变，
         //test.changeCase1();
         // case2 可以改变list的内容
