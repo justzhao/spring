@@ -29,6 +29,9 @@ public class CollectionTest {
     public void printList(List<String> list){
         
         for(String s:list){
+            
+            
+            
             System.out.println(s);
         }
         
