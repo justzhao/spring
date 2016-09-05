@@ -4,4 +4,7 @@
 .settings/
 .logs/
 target/
-/bin/
+/bin
+.springBeans
+.idea/
+*.iml
