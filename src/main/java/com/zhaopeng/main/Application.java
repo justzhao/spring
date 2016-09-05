@@ -23,7 +23,7 @@ import com.zhaopeng.service.MessageService;
  * @since 2016年8月4日
  */
 @Configuration
-@ComponentScan({ "com.zhaopeng" })
+@ComponentScan({"com.zhaopeng" })
 public class Application {
     @Bean
     MessageService mockMessageService() {
