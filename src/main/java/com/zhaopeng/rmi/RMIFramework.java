@@ -48,6 +48,8 @@ public class RMIFramework {
                                         }
                                         Method method = service.getClass().getMethod(methodName, parameterTypes);
                                         Object result = method.invoke(service, arguments);
+
+                                        System.out.println("Service  invoke result is " + result.toString());
                                         output.writeObject(result);
                                     } catch (Throwable t) {
                                         output.writeObject(t);
