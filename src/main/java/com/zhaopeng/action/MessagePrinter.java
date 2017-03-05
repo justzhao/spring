@@ -1,12 +1,15 @@
 package com.zhaopeng.action;
 
+import com.zhaopeng.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
-import com.zhaopeng.service.MessageService;
+import java.util.Iterator;
+import java.util.Map;
+
 /**
  *  
  *  
@@ -62,6 +65,19 @@ public class MessagePrinter implements ResourceLoaderAware {
 
     public void setResource(Resource resource) {
         this.resource = resource;
+    }
+
+
+    public  static  void  main(String args[]){
+        Map map = System.getenv();
+        System.out.println(map.get("ROCKETMQ_HOME"));
+        Iterator it = map.entrySet().iterator();
+        while(it.hasNext())
+        {
+            Map.Entry entry = (Map.Entry)it.next();
+            System.out.print(entry.getKey()+"=");
+            System.out.println(entry.getValue());
+        }
     }
   
     
